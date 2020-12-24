@@ -3,7 +3,7 @@ import {Box} from '@chakra-ui/react'
 import AlertInfo from '../Components/Alert'
 import Navbar from '../Components/Navbar'
 
-export const home = () => {
+const Home = () => {
     return (
         <Box>
             <AlertInfo/>
@@ -11,3 +11,4 @@ export const home = () => {
         </Box>
     )
 }
+export default Home
