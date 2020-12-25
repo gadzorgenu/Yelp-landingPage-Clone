@@ -6,6 +6,7 @@ const Router = () => {
     return(
         <React.Suspense fallback={<h4>Loading....</h4>}>
             <Switch>
+                {/* <Redirect from='*' to='/home' /> */}
                 <Route path='/home' component={Pages.Home}/>
             </Switch>
         </React.Suspense>

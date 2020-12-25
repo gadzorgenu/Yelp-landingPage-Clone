@@ -2,15 +2,19 @@ import React from 'react'
 import {Box, Image} from '@chakra-ui/react'
 import AlertInfo from '../Components/Alert'
 import Navbar from '../Components/Navbar'
-import food2 from '../Assets/food2.jpg'
+import rest2 from '../Assets/rest2.jpg'
+import SearchBar from '../Components/SearchBar'
 
 
 const Home = () => {
     return (
-        <Box>
+        <Box >
             <AlertInfo/>
-            <Image pos='absolute' src={food2} alt='restaurant'/>
-            <Navbar/>
+            <Image pos='absolute' src={rest2} alt='restaurant' h={{md:'750px'}} w={{md: '100%'}}/>
+            <Box pos='relative'>
+                <Navbar/>
+                <SearchBar/>
+            </Box>
         </Box>
     )
 }
