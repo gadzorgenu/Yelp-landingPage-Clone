@@ -15,7 +15,7 @@ import {
     return (
         <Alert status="info" bg='gray.100' py={2} px={8}>
             <Flex mx='30px'>
-                <Flex ml='40px'>
+                <Flex ml='90px'>
                     <Image src='https://promos.yelpcdn.com/food_delivery_icon_2x.png' alt='logo'/>
                     <Text fontSize='20px' mt={4} mx={3} fontWeight='bold'>You can always order in </Text>
                 </Flex>

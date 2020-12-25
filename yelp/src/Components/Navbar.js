@@ -1,12 +1,11 @@
 import React from 'react'
 import {Flex, Link ,Button, Box, Image, Spacer} from '@chakra-ui/react'
-import food1 from '../Assets/food1.jpg'
+
 
 const Navbar = () => {
     return (
-        <Box>
-            <Image pos='absolute' src={food1} alt='restaurant'/>
-            <Flex pos='relative' color='white' fontSize='20px' fontWeight='bold' py='30px' px='100px'>
+        <Box pos='relative'>
+            <Flex  color='white' fontSize='20px' fontWeight='bold' py='30px' px='100px'>
                 <Flex >
                     <Link 
                         _hover={{ borderBottomWidth:'3px', borderColor:'white'}}
@@ -30,7 +29,8 @@ const Navbar = () => {
                 <Flex>
                     <Link href='/login' _hover={{ textDecor: 'none' }} mt={2} pr={6}>Login</Link>
                     <Button as='a' 
-                    bg='transparent' 
+                        href='/signup'
+                        bg='transparent' 
                         _hover={{ textDecor: 'none' }} 
                         borderWidth={1} 
                         borderColor='white'
