@@ -23,7 +23,7 @@ const Select = ({ change, label, ...rest }) => {
                 style: {
                     ':hover': {
                     backgroundColor: 'blue',
-                    color: 'white'
+                    color: 'whitee'
                     }
                 }
                 },
