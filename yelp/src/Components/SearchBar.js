@@ -1,6 +1,8 @@
 import React from 'react'
 import { Box, Divider, Flex} from '@chakra-ui/react'
 import Select from './Select'
+import  { FaUtensils, } from 'react-icons'
+import { BsWrench } from 'react-icons/bs'
 const SearchBar = () => {
 
   return (
@@ -14,15 +16,26 @@ const SearchBar = () => {
                 labelKey='label'
                 valueKey='value'
                 options={[
-                    { value: 'Restaurants', label: 'Restaurants' },
-                    { value: 'Delivery', label: 'Delivery' },
-                    { value: 'Takeout', label: 'Takeout' },
-                    { value: 'Accountants', label: 'Accountants' },
-                    { value: 'Plumbers', label: 'Plumbers' },
-                    { value: 'Auto Repair', label: 'Auto Repair' } 
+                    { value: 'Restaurants', label: 'Restaurants',icon: '' },
+                    { value: 'Delivery', label: 'Delivery', icon: '' },
+                    { value: 'Takeout', label: 'Takeout', icon: '' },
+                    { value: 'Accountants', label: 'Accountants', icon: '' },
+                    { value: 'Plumbers', label: 'Plumbers', icon: '' },
+                    { value: 'Auto Repair', label: 'Auto Repair', icon: '' } 
                 ]}
                 />
             <Divider orientation="vertical" borderWidth={1} borderColor='gray.200' h='40px'/>
+            <Select
+                label='Near'
+                placeholder='San Fransisco, CA'
+                id='place'
+                name='place'
+                labelKey='label'
+                valueKey='value'
+                options={[
+                    { value: 'Restaurants', label: 'Restaurants',icon: '' },
+                ]}
+                />
         </Flex>
     </Box>
   )
