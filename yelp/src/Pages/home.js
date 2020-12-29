@@ -4,7 +4,7 @@ import AlertInfo from '../Components/Alert'
 import Navbar from '../Components/Navbar'
 import rest2 from '../Assets/rest2.jpg'
 import SearchBar from '../Components/SearchBar'
-
+import Services from '../Components/Services'
 
 const Home = () => {
     return (
@@ -14,6 +14,7 @@ const Home = () => {
             <Box pos='relative'>
                 <Navbar/>
                 <SearchBar/>
+                <Services/>
             </Box>
         </Box>
     )
