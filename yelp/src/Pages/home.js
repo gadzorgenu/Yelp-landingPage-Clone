@@ -11,14 +11,14 @@ const Home = () => {
         <Box >
             <AlertInfo/>
             <Box pos='relative'>
-                <Image  src={rest2} alt='restaurant' h={{md:'750px'}} w={{md: '100%'}}/>
-                <Box pos='absolute'>
+                <Image pos='absolute'  src={rest2} alt='restaurant' h={{md:'750px'}} w={{md: '100%'}}/>
+                <Box pos='relative'>
                     <Navbar/>
                     <SearchBar/>
                     <Services/>
                 </Box>
             </Box>
-            <Box>
+            <Box pos='relative'>
                 <Text color='red.400' fontWeight='bold' textAlign='center' mt={10}>Find the Best Business in Town</Text>
             </Box>
         </Box>
