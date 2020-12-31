@@ -23,12 +23,14 @@ const BusinessCard = ({title}) => {
     }    
 
     return (
-        <a href='/home'>
-            <Box boxSize="xs" borderRadius={3} >
-                <Image src={images(title)}  alt={title}/>
-                <Text bg='gray.300'textAlign='center' py={3}>{title}</Text>
-            </Box>
-        </a>
+        <Box >
+            <a href='/home'>
+                <Box boxSize="xs" h='260px' bgColor='white' mb={12}>
+                    <Image src={images(title)}  alt={title}/>
+                    <Text textAlign='center' py={2}>{title}</Text>
+                </Box>
+            </a>
+        </Box>
     )
 }
 

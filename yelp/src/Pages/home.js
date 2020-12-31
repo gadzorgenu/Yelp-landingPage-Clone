@@ -51,8 +51,8 @@ const Home = () => {
                     <Services/>
                 </Box>
             </Box>
-            <Box >
-                <Text color='red.400' fontWeight='bold' textAlign='center' fontSize='30px' mt={10}>Find the Best Business in Town</Text>
+            <Box bgColor='gray.200' >
+                <Text color='red.400' fontWeight='bold' textAlign='center' fontSize='30px' py={10}>Find the Best Business in Town</Text>
                 <Box my='40px' mx='40px'>
                     <Grid templateColumns='repeat(4, 1fr)' >
                         {
