@@ -1,12 +1,11 @@
 import React from 'react'
 import { Box, Divider, Flex} from '@chakra-ui/react'
 import Select from './Select'
-import  { FaUtensils, } from 'react-icons'
-import { BsWrench } from 'react-icons/bs'
+
 const SearchBar = () => {
 
   return (
-    <Box mt='200px' py={2} mx='200px' color='gray.600' borderRadius='4px'  bg='white'>
+    <Box mt='70px' py={2} mx='200px' color='gray.600' borderRadius='4px'  bg='white'>
         <Flex>
             <Select
                 label='Find'

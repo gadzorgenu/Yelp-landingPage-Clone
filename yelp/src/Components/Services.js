@@ -5,7 +5,7 @@ import  { FaUtensils, FaTools,FaMotorcycle, FaStore, FaCaretDown } from 'react-i
 const Services = () => {
     return (
         <Box textAlign='center' >
-            <Flex  color='white' fontSize='20px' fontWeight='bold' py='30px' justify='center' >
+            <Flex  color='white' fontSize='18px' fontWeight='bold' py='30px' justify='center' >
                 <Flex >
                     <Flex mr={5}>
                     <Icon as={FaTools} mt={1} mr={1} />
