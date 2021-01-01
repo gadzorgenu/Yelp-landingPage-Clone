@@ -7,7 +7,7 @@ import SearchBar from '../Components/SearchBar'
 import Services from '../Components/Services'
 import BusinessCard from '../Components/Cards/BusinessCard'
 import Branches from '../Components/Branches'
-
+import NewBusiness from '../Components/NewBusiness'
 const Home = () => {
 
     const Business =[
@@ -67,7 +67,8 @@ const Home = () => {
                         </Grid>
                     </Box>
                 </Box>
-                <Branches mx='15%'/>     
+                <Branches mx='15%'/>   
+                <NewBusiness/>  
         </Box>
     )
 }
