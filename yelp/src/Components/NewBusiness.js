@@ -1,44 +1,58 @@
 import React from 'react'
-import {Box,Text,Image, Flex, Icon} from '@chakra-ui/react'
-import ice_cream from '../Assets/ice_cream.jpg'
-import noodles from '../Assets/noodles.jpg'
-import soup from '../Assets/ice_cream.jpg'
-import {FaHotjar} from 'react-icons/fa'
+import {Box,Text, Grid} from '@chakra-ui/react'
+import NewBusinessCard from './Cards/NewBusinessCard'
 
-const NewBusiness = ({title, review,venue,location, weeks}) => {
+const NewBusiness = () => {
 
-    const images = (image) => {
-        switch(image){
-            case 'Cuisine':
-                return soup
-            case 'Noodles':
-                return noodles
-            case 'Ice cream': 
-                return ice_cream
-            default :
-                return null
-        }
-    }  
+const data = [
+    {
+        id:1,
+        number:1,
+        title: 'Kusan Uyghur Cuisine',
+        review: 6,
+        location: 'Halal, Asian Fusion, Middle Eastern',
+        venue:'Bayview-Hunters Point',
+        weeks: '6 weeks'
+    },
+    {
+        id:2,
+        number:2,
+        title: 'Kyushu Ramen',
+        review: 5,
+        location: 'Ramen',
+        venue:'Outer Sunset',
+        weeks: '4 weeks'
+    },
+    {
+        id:3,
+        number:3,
+        title: 'Double Rainbow Ice Cream',
+        review: 17,
+        location: 'Ice Cream & Frozen Yogurt',
+        venue:'Castro',
+        weeks: '7 weeks'
+    }
+]
     return (
-       <Box mx='15px' my='2%'>
+       <Box mx='15px' mb='6%'>
            <Text color='red.400' fontWeight='bold' textAlign='center' fontSize='20px'>Hot and New Businesses</Text>
-           <a href='/home'>
-                <Box boxSize="lg" h='210px' bgColor='white' mb={12} _hover={{boxShadow:'xl'}}>
-                    <Image src={images(title)}  alt={title}/>
-                    <Box pl='30px'>
-                        <Text color='blue.300' py={2}>{title}</Text>
-                        <Flex>
-                            <Text>{review}</Text>
-                        </Flex>
-                        <Text>{location}</Text>
-                        <Text>{venue}</Text>
-                        <Flex>
-                            <Icon  as={FaHotjar} color='orange.500' mt={1} mr={1}/>
-                            <Text color='orange.500'>Opened {weeks} ago</Text>
-                        </Flex>
+           <Box my='10px'mx='15%' >
+                        <Grid templateColumns='repeat(4, 1fr)' gap={6} >
+                            {
+                                data.map((item) => (
+                                    <NewBusinessCard
+                                        key={item.id}
+                                        title={item.title}
+                                        review={item.review}
+                                        location={item.location}
+                                        venue={item.venue}
+                                        weeks={item.weeks}
+                                        number={item.number}
+                                    />
+                                ))
+                            }
+                        </Grid>
                     </Box>
-                </Box>
-            </a>
        </Box>
     )
 }
