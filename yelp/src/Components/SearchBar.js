@@ -5,7 +5,7 @@ import Select from './Select'
 const SearchBar = () => {
 
   return (
-    <Box mt='70px' py={2} mx='200px' color='gray.600' borderRadius='4px'  bg='white'>
+    <Box mt='70px' py={2}  color='gray.600' borderRadius='4px'  bg='white'>
         <Flex>
             <Select
                 label='Find'

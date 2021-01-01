@@ -1,7 +1,7 @@
 import React from 'react'
-import {Box,Text, Flex, Link} from '@chakra-ui/react'
+import {Box,Text, Flex, Link, Divider} from '@chakra-ui/react'
 
-const Branches = () => {
+const Branches = ({mx}) => {
 
     return(
         <Box my='50px'>
@@ -15,6 +15,7 @@ const Branches = () => {
                 <Link mr={4} _hover={{ borderBottomWidth:'3px', borderColor:'red.500'}}>Oakland</Link>
                 <Link >More Cities</Link>
             </Flex>
+            <Divider my={4} borderColor='gray.400' w='70%' mx={mx}/>
         </Box>
     )
 }

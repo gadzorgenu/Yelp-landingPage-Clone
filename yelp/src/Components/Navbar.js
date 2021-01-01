@@ -5,7 +5,7 @@ import {Flex, Link ,Button, Box, Image, Spacer} from '@chakra-ui/react'
 const Navbar = () => {
     return (
         <Box >
-            <Flex  color='white' fontSize='20px' fontWeight='bold' py='30px' mx='200px'>
+            <Flex  color='white' fontSize='20px' fontWeight='bold' py='30px' >
                 <Flex >
                     <Link 
                         _hover={{ borderBottomWidth:'3px', borderColor:'white'}}

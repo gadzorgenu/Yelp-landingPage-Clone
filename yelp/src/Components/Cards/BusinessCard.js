@@ -25,7 +25,7 @@ const BusinessCard = ({title}) => {
     return (
         <Box >
             <a href='/home'>
-                <Box boxSize="xs" h='260px' bgColor='white' mb={12} _hover={{boxShadow:'xl'}}>
+                <Box boxSize="2xs" h='210px' bgColor='white' mb={12} _hover={{boxShadow:'xl'}}>
                     <Image src={images(title)}  alt={title}/>
                     <Text textAlign='center' py={2}>{title}</Text>
                 </Box>
