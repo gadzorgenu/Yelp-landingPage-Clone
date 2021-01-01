@@ -1,13 +1,13 @@
 import React from 'react'
-import {Route, Switch} from 'react-router-dom'
+import {Route, Switch, Redirect} from 'react-router-dom'
 import Pages from './Pages'
 
 const Router = () => {
     return(
         <React.Suspense fallback={<h4>Loading....</h4>}>
             <Switch>
-                {/* <Redirect from='*' to='/home' /> */}
                 <Route path='/home' component={Pages.Home}/>
+                <Redirect from='*' to='/home' component={Pages.Home}/>
             </Switch>
         </React.Suspense>
     )

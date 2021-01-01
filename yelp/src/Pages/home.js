@@ -6,6 +6,7 @@ import rest2 from '../Assets/rest2.jpg'
 import SearchBar from '../Components/SearchBar'
 import Services from '../Components/Services'
 import BusinessCard from '../Components/Cards/BusinessCard'
+import Branches from '../Components/Branches'
 
 const Home = () => {
 
@@ -20,11 +21,11 @@ const Home = () => {
         },
         {
             id: 3,
-            title: 'Gym'
+            title: 'Gyms'
         },
         {
             id: 4,
-            title: 'Dentist'
+            title: 'Dentists'
         }
     ]
     return (
@@ -34,7 +35,7 @@ const Home = () => {
                 {/* <Image pos='absolute'  src={rest2} alt='restaurant' h={{md:'750px'}} w={{md: '100%'}}/> */}
                 <Box>
                     <Navbar/>
-                    <Flex justify='center' mt={14}>
+                    <Flex justify='center' mt='100px'>
                         <a href='/home'>
                             <Box
                                 w= '180px'
@@ -51,9 +52,9 @@ const Home = () => {
                     <Services/>
                 </Box>
             </Box>
-            <Box bgColor='gray.200' >
-                <Text color='red.400' fontWeight='bold' textAlign='center' fontSize='30px' py={10}>Find the Best Business in Town</Text>
-                <Box my='40px' mx='40px'>
+            <Box bgColor='gray.100' >
+                <Text color='red.400' fontWeight='bold' textAlign='center' fontSize='30px' py={5}>Find the Best Business in Town</Text>
+                <Box my='10px' mx='40px'>
                     <Grid templateColumns='repeat(4, 1fr)' >
                         {
                             Business.map((item) => (
@@ -66,7 +67,7 @@ const Home = () => {
                     </Grid>
                 </Box>
             </Box>
-
+            <Branches/>     
         </Box>
     )
 }

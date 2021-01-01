@@ -13,9 +13,9 @@ const BusinessCard = ({title}) => {
                 return massage
             case 'Dry Cleaning':
                 return dry_cleaning
-            case 'Gym': 
+            case 'Gyms': 
                 return gym
-            case 'Dentist':
+            case 'Dentists':
                 return dentist
             default :
                 return null
@@ -25,7 +25,7 @@ const BusinessCard = ({title}) => {
     return (
         <Box >
             <a href='/home'>
-                <Box boxSize="xs" h='260px' bgColor='white' mb={12}>
+                <Box boxSize="xs" h='260px' bgColor='white' mb={12} _hover={{boxShadow:'xl'}}>
                     <Image src={images(title)}  alt={title}/>
                     <Text textAlign='center' py={2}>{title}</Text>
                 </Box>
