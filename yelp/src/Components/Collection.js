@@ -15,7 +15,7 @@ const Collection = ({location, title, numOfPlaces, name, image}) => {
                         </Flex>
                 </Box>
            </Flex>
-           <Divider w='100%' borderColor='gray.400' my={4}/>
+           <Divider w='100%' borderColor='gray.300' my={4}/>
        </Box>
     )
 }
