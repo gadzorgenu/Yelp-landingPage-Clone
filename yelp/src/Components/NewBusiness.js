@@ -1,5 +1,5 @@
 import React from 'react'
-import {Box,Text, Grid} from '@chakra-ui/react'
+import {Box,Text, Grid,Link} from '@chakra-ui/react'
 import NewBusinessCard from './Cards/NewBusinessCard'
 
 const NewBusiness = () => {
@@ -34,25 +34,26 @@ const data = [
     }
 ]
     return (
-       <Box mx='15px' mb='6%'>
+       <Box mx='15px'>
            <Text color='red.400' fontWeight='bold' textAlign='center' fontSize='20px'>Hot and New Businesses</Text>
-           <Box my='10px'mx='15%' >
-                        <Grid templateColumns='repeat(4, 1fr)' gap={6} >
-                            {
-                                data.map((item) => (
-                                    <NewBusinessCard
-                                        key={item.id}
-                                        title={item.title}
-                                        review={item.review}
-                                        location={item.location}
-                                        venue={item.venue}
-                                        weeks={item.weeks}
-                                        number={item.number}
-                                    />
-                                ))
-                            }
-                        </Grid>
-                    </Box>
+           <Box mx='15%' >
+                <Grid templateColumns='repeat(4, 1fr)' gap={6} >
+                    {
+                        data.map((item) => (
+                            <NewBusinessCard
+                                key={item.id}
+                                title={item.title}
+                                review={item.review}
+                                location={item.location}
+                                venue={item.venue}
+                                weeks={item.weeks}
+                                number={item.number}
+                            />
+                        ))
+                    }
+                </Grid>
+            </Box>
+            <Text as='a' href='/home' ml='45%' color='blue.300' textAlign='center'> See more hot and new businesses</Text>
        </Box>
     )
 }
