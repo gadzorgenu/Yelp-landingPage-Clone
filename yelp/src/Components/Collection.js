@@ -1,5 +1,5 @@
 import React from 'react'
-import {Box,Text,Image, Flex, Icon} from '@chakra-ui/react'
+import {Box,Text,Image, Flex, Icon,Divider} from '@chakra-ui/react'
 
 const Collection = ({location, title, numOfPlaces, name, image}) => {
     return (
