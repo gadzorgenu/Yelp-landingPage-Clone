@@ -5,7 +5,7 @@ const Branches = ({mx}) => {
 
     return(
         <Box my='50px'>
-            <Text color='red.400' fontWeight='bold' textAlign='center' fontSize='30px' > Yelp San Fransisco</Text>
+            <Text color='red.600' fontWeight='bold' textAlign='center' fontSize='30px' > Yelp San Fransisco</Text>
             <Flex mt={3} justify='center' fontSize='20px' color='gray.500'>
                 <Link mr={4} _hover={{ borderBottomWidth:'3px', borderColor:'red.500'}}>New York</Link>
                 <Link mr={4} _hover={{ borderBottomWidth:'3px', borderColor:'red.500'}}>San Jose</Link>

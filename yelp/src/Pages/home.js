@@ -8,6 +8,8 @@ import Services from '../Components/Services'
 import BusinessCard from '../Components/Cards/BusinessCard'
 import Branches from '../Components/Branches'
 import NewBusiness from '../Components/NewBusiness'
+import Collection from '../Components/Collection'
+
 const Home = () => {
 
     const Business =[
@@ -26,6 +28,50 @@ const Home = () => {
         {
             id: 4,
             title: 'Dentists'
+        }
+    ]
+    const collections=[
+        {
+            id:1,
+            location: 'Check, Please! Bay Area',
+            title: 'PBS TV Show',
+            numOfPlaces: '9 Places',
+            name: 'Stacy B.'
+        },
+        {
+            id:2,
+            location: 'Check, Please! Bay Area',
+            title: 'PBS TV Show',
+            numOfPlaces: '9 Places',
+            name: 'Stacy B.'
+        },
+        {
+            id:3,
+            location: 'Check, Please! Bay Area',
+            title: 'PBS TV Show',
+            numOfPlaces: '9 Places',
+            name: 'Stacy B.'
+        },
+        {
+            id:4,
+            location: 'Check, Please! Bay Area',
+            title: 'PBS TV Show',
+            numOfPlaces: '9 Places',
+            name: 'Stacy B.'
+        },
+        {
+            id:5,
+            location: 'Check, Please! Bay Area',
+            title: 'PBS TV Show',
+            numOfPlaces: '9 Places',
+            name: 'Stacy B.'
+        },
+        {
+            id:6,
+            location: 'Check, Please! Bay Area',
+            title: 'PBS TV Show',
+            numOfPlaces: '9 Places',
+            name: 'Stacy B.'
         }
     ]
     return (
@@ -53,7 +99,7 @@ const Home = () => {
                     </Box>
                 </Box>
                 <Box bgColor='gray.100' >
-                    <Text color='red.400' fontWeight='bold' textAlign='center' fontSize='30px' py={5}>Find the Best Business in Town</Text>
+                    <Text color='red.600' fontWeight='bold' textAlign='center' fontSize='30px' py={5}>Find the Best Business in Town</Text>
                     <Box my='10px'mx='15%' >
                         <Grid templateColumns='repeat(4, 1fr)' >
                             {
@@ -69,6 +115,21 @@ const Home = () => {
                 </Box>
                 <Branches mx='15%'/>   
                 <NewBusiness/>  
+                <Box mx='15%' my='2%' borderRadius='5px' borderWidth='1px' borderColor='gray.300' p='4%' >
+                        <Grid templateColumns='repeat(2, 1fr)' gap={8} >
+                            {
+                                collections.map((item) => (
+                                    <Collection
+                                        key={item.id}
+                                        location={item.location}
+                                        title={item.title}
+                                        numOfPlaces={item.numOfPlaces}
+                                        name={item.name}
+                                    />
+                                ))
+                            }
+                        </Grid>
+                    </Box>
         </Box>
     )
 }

@@ -21,7 +21,7 @@ const NewBusinessCard =({title,number, review,venue,location, weeks}) => {
     } 
     return (
         <Box>
-            <Box pl='20px' py='1%' boxSize="sm" h='200px' >
+            <Box pl='20px' py='1%' boxSize="sm" h='10%' my='1%' >
                 {/* <Image src={images(number)}  alt={title}/> */}
                 <Text color='blue.400' py={2}>{title}</Text>
                 <Flex>
