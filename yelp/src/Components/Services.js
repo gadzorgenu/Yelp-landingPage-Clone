@@ -1,5 +1,5 @@
 import React from 'react'
-import {Flex, Link ,Button, Box, Icon, } from '@chakra-ui/react'
+import {Flex, Link ,Button,Tooltip, Box, Icon, } from '@chakra-ui/react'
 import  { FaUtensils, FaTools,FaMotorcycle, FaStore, FaCaretDown } from 'react-icons/fa'
 
 const Services = () => {
@@ -48,6 +48,9 @@ const Services = () => {
                         </Link>
                         <Icon as={FaCaretDown} mt={1} ml={1} />
                     </Flex>
+                    <Tooltip hasArrow bg='white' color='blue.300' label="Restaurants" aria-label="A tooltip" >
+                        Hover me
+                    </Tooltip>
                 </Flex>
                
             </Flex>

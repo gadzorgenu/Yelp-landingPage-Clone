@@ -26,12 +26,14 @@ const SearchBar = () => {
                 />
             <Divider orientation="vertical" borderWidth={1} borderColor='gray.200' h='40px'/>
             <Text mt={3} mx={3}>Near</Text>
-            <Input border="none" mt={2} placeholder="SA FRANCISCO" textDecoration='none' _active={{textDecoration: 'none'}}/>
-            <IconButton
-                colorScheme="blue"
-                aria-label="Search database"
-                icon={<HiSearch />}
-            />
+            <Input border="none" mt={1} placeholder="SA FRANCISCO" textDecoration='none' _active={{textDecoration: 'none'}}/>
+            <Box >
+                <IconButton
+                    colorScheme="blue"
+                    aria-label="Search database"
+                    icon={<HiSearch />}
+                />
+            </Box>
         </Flex>
     </Box>
   )
