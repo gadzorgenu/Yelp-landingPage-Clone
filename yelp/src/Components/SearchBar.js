@@ -1,6 +1,7 @@
 import React from 'react'
-import { Box, Divider, Flex} from '@chakra-ui/react'
+import { Box, Divider, Flex,Text,Input,InputRightAddon, IconButton} from '@chakra-ui/react'
 import Select from './Select'
+import { HiSearch } from "react-icons/hi"
 
 const SearchBar = () => {
 
@@ -24,17 +25,13 @@ const SearchBar = () => {
                 ]}
                 />
             <Divider orientation="vertical" borderWidth={1} borderColor='gray.200' h='40px'/>
-            <Select
-                label='Near'
-                placeholder='San Fransisco, CA'
-                id='place'
-                name='place'
-                labelKey='label'
-                valueKey='value'
-                options={[
-                    { value: 'Restaurants', label: 'Restaurants',icon: '' },
-                ]}
-                />
+            <Text mt={3} mx={3}>Near</Text>
+            <Input border="none" mt={2} placeholder="SA FRANCISCO" textDecoration='none' _active={{textDecoration: 'none'}}/>
+            <IconButton
+                colorScheme="blue"
+                aria-label="Search database"
+                icon={<HiSearch />}
+            />
         </Flex>
     </Box>
   )
